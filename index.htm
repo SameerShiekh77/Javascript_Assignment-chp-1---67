@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 9 | JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- CHAPTER 14 TO 16 -->
+    <!-- TASK 15 CODE -->
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Phone Manufactures</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a id="apple"></a>
+            <a id="samsung"></a>
+            <a id="motorola"></a>
+            <a id="nokia"></a>
+            <a id="sony"></a>
+            <a id="haier"></a>
+        </div>
+    </div>
+    <!-- #################### -->
+
+
+    <!-- Chapter 43-48 -->
+    <!-- Task 1 -->
+    <!-- 1. Show an alert box on click on a link -->
+    <a href="#" onclick="clickMe()">Click me</a>
+
+    <!-- Task 2 -->
+    <!-- 2. Display some Mobile images in browser. On click on an image Show the message in alert to user. -->
+
+    <h1 style="color: royalblue;">
+        Mobile Phone Lookup
+    </h1>
+    <div>
+        <div>
+            <img onclick="MobilePurchase()" style="border: 1px solid gray; cursor: pointer" src="./Images/iphone-11-pro-select-2019-family.jpg" width="5%" height="10%">
+            <p>
+                iphone-11-pro
+            </p>
+        </div>
+        <div>
+            <img onclick="MobilePurchase()" style="border: 1px solid gray; cursor: pointer" src="./Images/samsung-galaxy-s6.jpg" width="5%" height="10%">
+            <p>
+                samsung-galaxy-s6
+            </p>
+        </div>
+        <div>
+            <img onclick="MobilePurchase()" style="border: 1px solid gray; cursor: pointer" src="./Images/realme-5-rmx1911-2.jpg" width="5% " height="10% ">
+            <p>
+                realme-5-rmx1911-2
+            </p>
+        </div>
+        <div>
+            <img onclick="MobilePurchase()" style="border: 1px solid gray; cursor: pointer" src="./Images/Huawei-Y9-2019-569x569.webp" width="5% " height="10% ">
+            <p>
+                Huawei-Y9
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Task 3
+    3. Display10 student records in table and each row should contain a delete button. If you click on a button to delete a record, entire row
+    should be deleted. -->
+
+    <table id="myTable">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>Ahmad</td>
+            <td>10</td>
+            <td><button>Delete</button></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Shan</td>
+            <td>5</td>
+            <td><button>Delete</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Sameer</td>
+            <td>10</td>
+            <td><button>Delete</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Emad</td>
+            <td>7</td>
+            <td><button>Delete</button></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Fatima</td>
+            <td>8</td>
+            <td><button>Delete</button></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Haya</td>
+            <td>8</td>
+            <td><button>Delete</button></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Danish</td>
+            <td>6</td>
+            <td><button>Delete</button></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Kamran</td>
+            <td>9</td>
+            <td><button>Delete</button></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Yusra</td>
+            <td>10</td>
+            <td><button>Delete</button></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Aiman</td>
+            <td>6</td>
+            <td><button>Delete</button></td>
+        </tr>
+    </table>
+
+    <!-- Task 4
+4. Display an image in browser. Change the picture on mouseover and set the firstpicture on mouseout. -->
+
+    <div>
+        <img id="imag" onmouseout="changeImage(src='./Images/iphone-11-pro-select-2019-family.jpg')" src="./Images/iphone-11-pro-select-2019-family.jpg" alt="" width="20%" height="20%" onmouseover="changeImage(src='./Images/realme-5-rmx1911-2.jpg')">
+    </div>
+
+    <!-- Task 5
+5. Show a counter in browser. Counter should increaseon click on increase button and decrease on click on decrease button.
+And show updated counter value in browser. -->
+
+    <center>
+        <h1 id="thisone">0</h1>
+        <button onclick="increaseBtn()">Increase</button>
+        <button onclick="DecreaseBtn()">Decrease</button>
+    </center>
+
+
+    <!-- CHAPTER 49-52
+Task 1
+1. Create a signup form and display form data in your webpage on submission -->
+
+    <center>
+        <Fieldset style="width: 30%;">
+            <legend>SignUp Form</legend>
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Enter Name" name="fullname" id="fullname">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="email" placeholder="Enter Email" name="email" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" name="password" placeholder="Enter password" id="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Enter Confirmation Password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" onclick="submit()" value="SUBMIT">
+                    </td>
+                </tr>
+            </table>
+        </Fieldset>
+    </center>
+
+    <!-- Task 2
+2. Suppose in your webpage there is content area in which you have entered your item details, but user can only see some details on first look.
+ When user clicks on “Read more” button, full detail of that particular item will be  displayed. -->
+
+    <!-- <p id="para">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit
+        <a href="javascript:void(0)" onclick="ReadMore()">Read More</a>
+    </p> -->
+
+    <!-- Task 3
+    3. In previous assignment you have created a tabular data using javascript. Let’s modify that. Create a form which takes student’s details
+     and show each student detail in table. Each row of table must contain a delete button and an edit button. On click on delete button entire
+     row should be deleted. On click on edit button, a hidden form will appear with the values of that row. -->
+
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onformSubmit()" autocomplete="off">
+                    <div>
+                        <label class="validation-error" for="fullName">Full Name</label><label class="validation-error hide warn" id="validationError">This field is required</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label class="validation-error" for="contact">Contact</label><label class="validation-error hide warn" id="validationError1">This field is required</label>
+                        <input type="number" name="contact" id="contact">
+                    </div>
+                    <div>
+                        <label class="validation-error" for="class">Class</label><label class="validation-error hide warn" id="validationError2">This field is required</label>
+                        <input type="text" name="class" id="class">
+                    </div>
+                    <div>
+                        <label class="validation-error" for="age">Age</label><label class="validation-error hide warn" id="validationError3">This field is required</label>
+                        <input type="number" name="age" id="age">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table id="studentList" class="list">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Contact</th>
+                            <th>Class</th>
+                            <th>Age</th>
+                            <th>Options</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+    <!-- Chapter 53 - 57
+
+    Task 1
+    1.Consider you have 4 images in a file Now When you click on an image it should display in a modal.: -->
+
+    <h2>Image Modal</h2>
+
+    <img id="myImg" src="./Images/1.jpg" style="width:100%;max-width:300px">
+    <img id="myImg2" src="./Images/4.png" height="200px" style="width:100%;max-width:300px">
+    <img id="myImg3" src="./Images/3.jpg" style="width:100%;max-width:300px">
+    <img id="myImg4" src="./Images/5.jpg" height="200px" style="width:100%;max-width:300px">
+    <img id="myImg5" src="./Images/6.jpg" height="200px" style="width:100%;max-width:300px">
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+
+    <!-- Task 2
+ 2. Create a paragraph and two buttons “zoom in ”(+) and “zoom out”(-).On each click on “zoom in”(+) , add 10px in font size of paragraph.
+ And on each click on “zoom out”(-) , minus 10px in font size of paragraph. -->
+
+    <p id="peragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quis culpa a ducimus officiis, ab porro inventore iste magnam facere qui fugiat, praesentium recusandae eveniet quaerat neque omnis nesciunt voluptates quam laborum quisquam repellat cumque
+        corporis. Numquam explicabo, et quam temporibus praesentium officia distinctio! Velit voluptatem facilis distinctio ducimus provident odio, est laudantium tempora quo ullam voluptates sint. Rem praesentium error ut suscipit ea alias aliquid accusamus
+        minus perspiciatis quis distinctio est nostrum, provident cumque, magnam nesciunt, autem numquam? Porro distinctio vero natus ducimus nulla doloribus inventore perspiciatis, incidunt, ratione soluta repudiandae molestias animi quasi. Quos esse
+        quidem sapiente nostrum!
+    </p>
+
+    <button onclick="zoomIn()" class="btn">Zoom in (+)</button>
+    <button onclick="zoomOut()" class="btn">Zoom out (-)</button>
+
+
+
+    <!-- CHAPTER # 58 - 67
+
+Task 1
+Consider you have following code snippet: -->
+
+    <!--1. Get element of id “main-content” and assign them in a variable. -->
+    <!-- 2. Display all child elements of “main-content” element. -->
+    <!-- 3. Get all elements of class “render” and show their innerHTML in browser.
+4. Fill input value whose element id first-name using javascript
+5.Repeat part iv for id ”last-name” and “email”. -->
+
+    <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="content">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" />
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+        </div>
+        <div id="main-content" class="content">
+            <p class="render"> First Name : Alex</p>
+            <p class="render" id="lastName">Last Name: Bank</p>
+            <p class="render"> Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan </p>
+            <p class="render"> contact : +92 300 1234567</p>
+        </div>
+    </div>
+
+    <!-- Task 2
+    2. use HTML code of question 1 and  show the result on browser. -->
+    <!-- i. What is node type of  element having id “form-content”.
+    ii. Show node type of element having id “lastName” and its child node.
+    iii. Update child node of element having id “lastName”.
+    iv. Get First and last child of id “main-content”.
+    v. Get next and previous siblings of id “lastName”.
+    vi. Get parent node and node type of element having id “email” -->
+
+    <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="content">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" />
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+        </div>
+        <div id="main-content" class="content">
+            <p class="render"> First Name : Alex</p>
+            <p class="render" id="lastName">Last Name: Bank</p>
+            <p class="render"> Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan </p>
+            <p class="render"> contact : +92 300 1234567</p>
+        </div>
+    </div>
+
+</body>
+<script src="app.js "></script>
+
+</html>
+
+</html>

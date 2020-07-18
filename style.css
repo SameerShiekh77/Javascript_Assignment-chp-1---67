@@ -1,0 +1,239 @@
+/*  CHAPTER 14 TO 16 
+    TASK 15 CODE */
+
+.dropbtn {
+    background-color: black;
+    color: red;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+
+/* CHAPTER 49-52 */
+
+
+/*  Task 3
+ 3. In previous assignment you have created a tabular data using javascript. Let’s modify that. Create a form which takes student’s details
+ and show each student detail in table. Each row of table must contain a delete button and an edit button. On click on delete button entire
+ row should be deleted. On click on edit button, a hidden form will appear with the values of that row. */
+
+body>table {
+    width: 80%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table.list {
+    width: 100%;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid gray;
+}
+
+table.list thead,
+tr {
+    background-color: skyblue;
+}
+
+input[type=text],
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid aqua;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: green;
+}
+
+form.div.form-action.button {
+    text-align: right;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+    margin-right: 4px;
+}
+
+label.validation-error {
+    color: black;
+    margin-left: 5px;
+}
+
+label.warn {
+    color: red;
+}
+
+.hide {
+    display: none;
+}
+
+
+/*  Chapter 53 - 57
+
+Task 1
+1.Consider you have 4 images in a file Now When you click on an image it should display in a modal.: --> */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#myImg,
+#myImg2,
+#myImg3,
+#myImg4,
+#myImg5 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover,
+#myImg2:hover,
+#myImg3:hover,
+#myImg4:hover,
+#myImg5:hover {
+    opacity: 0.7;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-content {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+/* Task 2
+ 2. Create a paragraph and two buttons “zoom in ”(+) and “zoom out”(-).On each click on “zoom in”(+) , add 10px in font size of paragraph.
+ And on each click on “zoom out”(-) , minus 10px in font size of paragraph. */
+
+.btn {
+    border-radius: 4%;
+    color: white;
+    background-color: black;
+    width: 8%;
+    height: 5%;
+    font-size: 25px;
+}
+
+.btn:hover {
+    background-color: red;
+}
